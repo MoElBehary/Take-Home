@@ -56,16 +56,16 @@ Before getting started, ensure you have Docker installed on your system. You can
 
 2.	Build Docker Image:
 
-docker build -t takehome:dev .  
+   docker build -t takehome:dev .  
 
 3.	Run Docker Container:
 
-docker run -it -p 3000:3000 takehome:dev
+   docker run -it -p 3000:3000 takehome:dev
 
-3.	This command maps port 3000 from the container to port 3000 on your local machine. Adjust the port number if your React app runs on a different port.
+4.	This command maps port 3000 from the container to port 3000 on your local machine. Adjust the port number if your React app runs on a different port.
 
-4.	Accessing the App:
-Once the Docker container is running, you can access your React app by opening a web browser and navigating to http://localhost:3000.
+5.	Accessing the App:
+   Once the Docker container is running, you can access your React app by opening a web browser and navigating to http://localhost:3000.
 
 ## Learn More
 
