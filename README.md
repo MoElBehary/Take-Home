@@ -33,6 +33,35 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+### ` To use Docker `
+
+This is a simple guide on how to run the React app in a Docker container.
+
+## Prerequisites
+
+Before getting started, ensure you have Docker installed on your system. You can download and install Docker from [here](https://www.docker.com/get-started).
+
+## Running the React App in a Docker Container
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/MoElBehary/take-home.git 
+   cd take-home
+
+2.	Build Docker Image:
+
+docker build -t takehome:dev .  
+
+3.	Run Docker Container:
+
+docker run -it -p 3000:3000 takehome:dev
+
+3.	This command maps port 3000 from the container to port 3000 on your local machine. Adjust the port number if your React app runs on a different port.
+
+4.	Accessing the App:
+Once the Docker container is running, you can access your React app by opening a web browser and navigating to http://localhost:3000.
+
+
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
@@ -68,9 +97,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Build Docker image
-docker build -t takehome:dev .  
-
-### Run Docker container
-docker run -it -p 3000:3000 takehome:dev
