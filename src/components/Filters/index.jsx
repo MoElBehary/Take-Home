@@ -120,7 +120,9 @@ const Filters = ({ filters, setFilter, sources, handleAvailableFilters }) => {
               value={filters?.source}
             >
               {sources?.map((source, index) => (
-                <option value={source?.name}>{source?.name}</option>
+                <option key={index} value={source?.name}>
+                  {source?.name}
+                </option>
               ))}
             </select>
           </div>
