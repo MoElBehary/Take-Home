@@ -55,8 +55,7 @@ Before getting started, ensure you have Docker installed on your system. You can
    cd take-home
 
 2.	Build Docker Image:
-
-   docker build -t takehome:dev .  
+   docker build -t takehome:dev .
 
 3.	Run Docker Container:
 
