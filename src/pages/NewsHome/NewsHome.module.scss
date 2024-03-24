@@ -1,0 +1,35 @@
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .gridContainer {
+    column-count: 3;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .gridContainer {
+    column-count: 2;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gridContainer {
+    column-count: 1;
+    column-gap: 24px;
+  }
+  .header {
+    position: static;
+  }
+}
+
+.gridItem {
+  display: inline-block;
+  margin-bottom: 24px;
+  width: 100%;
+}
